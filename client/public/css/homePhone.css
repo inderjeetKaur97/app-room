@@ -1,0 +1,89 @@
+
+
+@media screen and (min-height: 750px) {
+    main {
+      height: 36%;
+    }
+  } 
+
+
+
+
+
+@media screen and (max-width: 1250px) {
+  main {
+    width: 49%;
+    height: 52%;
+  }
+}
+@media screen and (max-width: 1050px) {
+  main {
+    width: 62%;
+  }
+}
+@media screen and (max-width: 800px) {
+  main {
+    width: 72%;
+  }
+}
+@media screen and (max-width: 650px) {
+  main {
+    width: 88%;
+  }
+}
+@media screen and (max-width: 550px) {
+  main {
+    width: 78%;
+    height: 45%;
+  }
+  main h2 {
+    font-size: 1.9rem;
+  }
+  .container {
+    flex-wrap: wrap;
+  }
+  .form-input {
+    margin-left: 20%;
+  }
+  .side-img-container img {
+    top: 20%;
+    left: 43%;
+    width: 168%;
+    height: 66%;
+  }
+  .side-img-text-cont {
+    font-size: 1.05rem;
+    top: -32%;
+    left: 68%;
+  }
+  .btn-joinRoom{
+      left: 5%;
+  }
+}
+@media screen and (max-width: 470px) {
+  main {
+    width: 88%;
+  }
+  main h2 {
+    font-size: 1.6rem;
+  }
+  .logo{
+  height: 12%;
+  margin-top: 6%;
+  }
+  .form-input{
+    margin-left: 21%;
+    width: 90%;
+  }
+  .side-img-container img {
+    top: 26%;
+    left: 43%;
+    width: 168%;
+    height: 71%;
+  }
+  .side-img-text-cont {
+    font-size: 1.03rem;
+    top: -32%;
+    left: 68%;
+  }
+}

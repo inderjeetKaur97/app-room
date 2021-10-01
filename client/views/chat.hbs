@@ -1,0 +1,51 @@
+
+<head>
+  <link rel="stylesheet" href="css/chat.css">  
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.1/qs.min.js" integrity="sha512-aTKlYRb1QfU1jlF3k+aS4AqTpnTXci4R79mkdie/bp6Xm51O5O3ESAYhvg6zoicj/PD6VYY0XrYwsWLcvGiKZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="/socket.io/socket.io.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js" integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="js/chat.js"></script>
+  <script
+      defer
+      src="https://kit.fontawesome.com/bd4ab4d7ef.js"
+      crossorigin="anonymous"
+  ></script>
+</head>
+<body>
+    <main>
+      <div class="container">
+        <div class="head-container">
+          <div class="title">IG-ChatForm</div>
+          <div class="head-buttons">
+            <button class="leave-room-btn" type="submit">Leave Room</button>
+            <button class="export-btn" type="submit">Export chat</button>
+          </div>
+        </div>
+        <div class="mid-container">
+          <div class="users-box">
+            <div class="rooms">
+              <h4><i class="fa fa-comments"></i>Room :</h4>
+              <p></p>
+            </div>
+            <div class="users">
+              <h4><i class="fa fa-users"></i>Users:</h4>
+              <div class="scroll-usernames">
+              </div>
+            </div>
+          </div>
+          <div class="chatbox">
+          </div>
+        </div>
+        <div class="foot-container">
+          <div class="message-send-box">
+            <img src="" alt="" class="user-avatar" />
+            <input type="text" name="message" placeholder="Enter Message" required>
+          </div>
+          <form class="send-btn-form">
+            <button class="send-btn" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</body>

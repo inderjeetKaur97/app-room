@@ -1,0 +1,8 @@
+1.	Different rooms-done
+2.	Avatar-done
+3.	Users active… -done
+4.	Typing…..----left
+5.	Time…-done
+6.	Joining and leaving the chat - done
+7.	Export convo in form of text ----left
+		

@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Calligraffitti&family=Dancing+Script&family=Glory:wght@200;300&family=IBM+Plex+Sans+Arabic:wght@300&family=Montserrat:wght@200&family=Orbitron&family=Parisienne&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(
+    to right top,
+    #0c0b4b,
+    #260e58,
+    #3d0f64,
+    #540f6e,
+    #6b0d78
+  );
+  color: white;
+}
+
+/* --------------------------------------user-avatar css-------------------------------------- */
+
+/* --------------------------------------section container css--------------------------------------  */
+.container {
+  height: 80vh;
+  width: 60vw;
+  margin: auto;
+  position: relative;
+  top: 5vh;
+  background-color: #1b0325;
+}
+
+/* -------------------section head-container that contains heading , leave room and export btn------------------- */
+.head-container {
+  height: 10%;
+  /* border: 2px solid rgb(221, 16, 16); */
+  border-radius: inherit;
+  display: flex;
+  column-gap: 50%;
+  align-items: center;
+  background-color: #1b0325;
+}
+.head-container .title {
+  color: white;
+  /* border: 2px solid white; */
+  width: 22%;
+  padding-left: 3%;
+  font-size: 1.6rem;
+  font-family: "Dancing Script", cursive;
+  animation: flicker 1.8s infinite alternate;
+}
+.head-container .head-buttons {
+  width: 32%;
+}
+.head-container .head-buttons button {
+  background-color: #857caa;
+  color: #1b0325;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 42%;
+  height: 4vh;
+  margin: 3%;
+  font-family: "Glory", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.head-container .head-buttons button:hover {
+  box-shadow: 
+    /* White glow */ 0 0 3px #f5deed, 0 0 9px #9e2eb8,
+    0 0 10px #b11cd3, /* purple glow */ 0 0 12px #9119ac, 0 0 15px #ad47c4,
+    0 0 18px #9039a3, 0 0 28px #811d97, 0 0 38px #591069;
+}
+
+/* ------section mid-container that contains username , room name in the left and chatbox in the right------------ */
+
+.mid-container {
+  height: 80%;
+  /* border: 2px solid rgb(22, 248, 33); */
+  border-radius: inherit;
+  display: flex;
+}
+.mid-container .users-box {
+  width: 25%;
+  background-color: #2d053f;
+}
+.mid-container .users-box .rooms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid pink; */
+  height: 30%;
+}
+.mid-container .users-box .users {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 2px solid white; */
+  height: 70%;
+}
+
+.mid-container .users-box h4 {
+  font-family: "Montserrat", sans-serif;
+  /* border: 2px solid white; */
+}
+.mid-container .users-box i {
+  margin-right: 8px;
+  color: rgb(170, 169, 169);
+}
+.mid-container .users-box .rooms p {
+  font-family: "Glory", sans-serif;
+  /* border: 2px solid white; */
+  background-color: #1b0325;
+  width: fit-content;
+  font-size: 1.2em;
+  text-align: center;
+  margin: 3% 0;
+  box-shadow: inset -2px -2px 2px rgb(0, 0, 0);
+  padding: 2% 5%;
+}
+.mid-container .users-box .users .scroll-usernames {
+  overflow-y: scroll;
+  padding: 5% 3%;
+  padding-left: 15%;
+  width: 117%;
+}
+.mid-container .users-box .users .scroll-usernames::-webkit-scrollbar {
+  display: none;
+}
+.user-avatar {
+  /* background-image: url("https://www.placecage.com/82/82"); */
+  background-size: contain;
+  /* border: 0.8px solid rgb(255, 252, 252); */
+  border-radius: 50%;
+  width: 4%;
+  margin: 0.55% 1%;
+  background-repeat: no-repeat;
+
+}
+.user-msg-avatar {
+  height: 23px;
+  width: 24px;
+  position: relative;
+  top: 5px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* border: none; */
+}
+.ig-bot-avatar{
+  background-image: url("/img/ig-bot-avatar.png");
+}
+.user-name-avatar {
+  height: 23px;
+  width: 24px;
+  position: relative;
+  top: 6px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 5px;
+  /* border-radius: none; */
+  
+}
+.mid-container .users-box .users .user-name {
+  /* text-align: center; */
+  margin: 5% 2%;
+  /* width: 80%; */
+}
+/* .mid-container .users-box .users img {
+  border-radius: 50%;
+  border: 2px solid white;
+  width: 4%;
+} */
+.mid-container .users-box .users span {
+  font-family: "Glory", sans-serif;
+}
+
+.mid-container .chatbox {
+  padding-top: 1%;
+  width: 75%;
+  background-color: whitesmoke;
+  overflow-y: auto;
+}
+.mid-container .chatbox .chats {
+  width: fit-content;
+  min-width: 38%;
+  /* height: 15%; */
+  /* border: 2px solid rgb(0, 0, 0); */
+  overflow-wrap: anywhere;
+  border-radius: 15px;
+  margin: 2.5% 2%;
+  color: rgb(0, 0, 0);
+  background-color: #b8afda;
+  font-family: "Glory", sans-serif;
+  font-weight: bold;
+  padding: 1% 2%;
+  padding-top: 0.5% ;
+  clear: both;
+}
+.mid-container .chatbox .chat-left {
+  margin-right: 20%;
+}
+.mid-container .chatbox .chat-right {
+  float: right;
+  margin-left: 20%;
+  background-color: #8274be;
+}
+
+.mid-container .chatbox .chats .name,
+.mid-container .chatbox .chats .time {
+  display: inline-block;
+  color: #6b0d78;
+  font-size: 0.9rem;
+  margin: 0 0.1%;
+}
+.mid-container .chatbox .chats .time {
+  font-size: 0.7rem;
+}
+.mid-container .chatbox .chats .text {
+  margin: 1% 0;
+  margin-top: 4%;
+  font-size: 1rem;
+}
+.mid-container .chatbox .chat-right .name,
+.mid-container .chatbox .chat-right .time {
+  color: #dbd7ec;
+}
+
+/*--------------- section foot-container that contains that contains message box and send button------------------- */
+.foot-container {
+  height: 10%;
+  /* border: 2px solid rgb(30, 16, 233); */
+  border-radius: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1b0325;
+}
+
+.foot-container .message-send-box {
+  /* border: 5px solid white; */
+  width: 80%;
+  height: 5.8vh;
+  display: flex;
+  border: solid 1.5px transparent;
+  border-radius: 18px;
+  background-image: linear-gradient(#1b0325, #1b0325),
+    radial-gradient(circle at top left, grey, grey, grey, transparent);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.foot-container .message-send-box input {
+  font-family: "Glory", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 78%;
+  margin: 0.5% 1%;
+  margin-left: 0.5%;
+  background: none;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+}
+
+.foot-container .send-btn {
+  cursor: pointer;
+  width: 250%;
+  height: 5vh;
+  margin-left: 10%;
+  background-color: #857caa;
+  font-family: "Glory", sans-serif;
+  font-weight: bold;
+  font-size: 1.05rem;
+  color: #1b0325;
+  border: none;
+}
+
+.foot-container .send-btn:hover {
+  box-shadow: 
+    /* White glow */ 0 0 1px #f5deed, 0 0 3px #9e2eb8,
+    0 0 6px #b11cd3, /* purple glow */ 0 0 10px #9119ac, 0 0 12px #ad47c4,
+    0 0 15px #9039a3, 0 0 20px #811d97, 0 0 30px #591069;
+}
+
+/*------------------------------section Animations for the flickr effect------------------------------------- */
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 
+        /* White glow */ 0 0 3px #f5deed, 0 0 9px #d175e6,
+      0 0 18px #b11cd3, /* purple glow */ 0 0 18px #a51dc4, 0 0 38px #ad47c4,
+      0 0 58px #9039a3, 0 0 78px #811d97, 0 0 98px #591069;
+  }
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
+}
+

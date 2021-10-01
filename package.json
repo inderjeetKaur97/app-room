@@ -1,0 +1,23 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "this is the best chat application",
+  "main": "node-server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon node-server/server.js -e js,html,css,hbs"
+  },
+  "author": "inderjeet kaur",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.3",
+    "file-saver": "^2.0.5",
+    "moment": "^2.29.1",
+    "socket.io": "^4.2.0",
+    "typed.js": "^2.0.12"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
